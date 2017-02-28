@@ -1,3 +1,4 @@
+
 #  쌍용고급식 카카오톡 봇
 
 카카오톡 자동응답 API 란?
@@ -17,9 +18,9 @@ DB 에서 값을 가져온다던지
 
 
 (https://github.com/humit0/kakao_auto_reply) 
-<- keyboard 버그 등을 수정하여 사용했으며, 
+<- keyboard 버그 등을 수정하여 이분의 API를 사용했으며,
 추가적으로 Button,Message 을 추가해서 사용했다.
-
+자세한건(http://humit.tistory.com/248)
 php5.3/ 5.5/ 7.0 구동확인
 
 nginx 에서는 .htaccess 파일을 수정해주어야 정상적으로 실행가능하다.
