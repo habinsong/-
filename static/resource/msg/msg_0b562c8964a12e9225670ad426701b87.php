@@ -1,18 +1,21 @@
 <?php
-// content : 1주
+// content : 급식정보
 use \kakao\Msg;
 use \kakao\Msg\Message;
 use \kakao\Keyboard;
 
 echo new Msg(
 	new Message(
-		"1주",
+		"급식 주기를 선택하세요.
+		-쌍용고 급식은 맛이없습니다.",
 		NULL,
 		NULL
 	),
 	new Keyboard(
 		array(
-			"2일 화요일","3일 수요일","4일 목요일","5일 금요일",
+			"27일~31일" ,
+
 		)
 	)
+
 );

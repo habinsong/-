@@ -20,7 +20,7 @@ if (!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] !== TRUE) {
 <html>
 <head>
     <meta charset="utf-8">
-    <title>카카오 자동 응답 테스트</title>
+    <title>쌍용고 급식봇</title>
     <style>
         #msg_show {
             overflow: auto;

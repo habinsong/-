@@ -16,7 +16,7 @@ if (!is_session_start()) {
 }
 
 if ($no == 1 && is_installed()) {
-    show_error(400, "이미 설치되었습니다.<a href='" . BASE_URL . "login.php'>로그인</a>");
+    show_error(400, "설치완료.<a href='" . BASE_URL . "login.php'>로그인</a>");
 }
 
 $script = array(1 => 'install_admin_id.min.js', 2 => 'keyboard_config.min.js');
@@ -41,7 +41,7 @@ switch ($no) {
         
     <form action="<?= $current_url ?>?no=<?= $no ?>&amp;send=1" method="post" onsubmit="return validation(this);">
         <div class="row">
-            <h5>관리자 계정 설정</h5>
+            <h5>카카오톡 쌍용고 봇 계정 </h5>
             <div class="input-field col s8">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required><br>
@@ -65,7 +65,7 @@ switch ($no) {
             $_SESSION['username'] = $_POST['username'];
             if ($is_user_add === TRUE):
 ?>
-    <script>alert("계정 생성 완료");
+    <script>alert("계정 생성 완료 ");
         location.href = "<?=$current_url?>?no=<?=$no+1?>"</script>
 <?php
             else:
@@ -91,12 +91,12 @@ switch ($no) {
             $result = set_default_buttons(explode("\r\n", $_POST['default_buttons']));
             if ($result):
 ?>
-    <script>alert("초기 Keyboard 설정 완료");
+    <script>alert("Keyboard 설정 완료");
         location.href = "<?=$current_url?>?no=<?=$no+1?>";</script>
 <?php
             else:
 ?>
-    <script>alert("초기 Keyboard 설정 실패");
+    <script>alert("Keyboard 설정 실패");
         history.back();</script>
 <?php
             endif;

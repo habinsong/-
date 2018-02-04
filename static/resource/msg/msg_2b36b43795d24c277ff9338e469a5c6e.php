@@ -1,18 +1,19 @@
 <?php
-// content : 1주
+// content : 임시시간표
 use \kakao\Msg;
 use \kakao\Msg\Message;
 use \kakao\Keyboard;
 
 echo new Msg(
 	new Message(
-		"1주",
+		"임시시간표 안내
+-학년을 선택해주세요.",
 		NULL,
 		NULL
 	),
 	new Keyboard(
 		array(
-			"2일 화요일","3일 수요일","4일 목요일","5일 금요일",
+			"1학년", "2학년", "3학년",
 		)
 	)
 );

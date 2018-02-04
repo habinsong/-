@@ -46,7 +46,7 @@ function ip_check()
     if (!IP_CHECK) {
         return TRUE;
     }
-    // check it https://github.com/plusfriend/auto_reply#71-proxy-server-information
+    // 카카오톡 API 서버 IP
     $allowed_ips = array("110.76.143.234", "110.76.143.235", "110.76.143.236");
     $ip = $_SERVER['REMOTE_ADDR'];
     if (in_array($ip, $allowed_ips)) {
@@ -65,13 +65,13 @@ function show_error($err_no, $message)
 {
     switch ($err_no) {
         case 400:
-            header("HTTP/1.1 400 Bad request");
+            header("HTTP/1.1 400 Bad request 오류");
             break;
         case 401:
-            header("HTTP/1.1 401 Unauthorized");
+            header("HTTP/1.1 401 Unauthorized 오류 ");
             break;
         case 403:
-            header("HTTP/1.1 403 Forbidden");
+            header("HTTP/1.1 403 Forbidden 오류");
             break;
         default:
             header("HTTP/1.1 200 OK");
@@ -162,7 +162,7 @@ function user_add($user_name, $password)
     $user_name = addslashes($user_name);
     $password = addslashes($password);
     if ($user_name == "" || !isset($user_name) || $password == "" || !isset($password)) {
-        return array("reason" => "빈 칸이 있습니다.");
+        return array("reason" => "항목이 비었습니다..");
     }
     $f = fopen(__DIR__ . '/admin.config.php', "w");
     fwrite($f, "<?php\n$" . "ADMIN_INFO = array(");

@@ -22,7 +22,7 @@ if (isset($_SESSION['is_admin']) && $_SESSION['is_admin'] === TRUE) {
 $is_ok = isset($_GET['login']) ? intval($_GET['login']) : 0;
 ?>
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko"> 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -41,7 +41,7 @@ switch ($is_ok) {
         <form class="login-form" action="<?= $_SERVER['PHP_SELF'] ?>?login=1" method="post" onsubmit="return validation(this);">
           <div class="row">
             <div class="input-field col s12 center">
-              <p class="center">관리자 로그인</p>
+              <p class="center">카카오톡 쌍용고 봇 로그인</p>
             </div>
           </div>
           <div class="row" style="margin:0 !important">
@@ -67,15 +67,16 @@ switch ($is_ok) {
       </div>
     </div>
     <script>
+    //로그인 폼
         function validation(form) {
             form.id.value = form.id.value.trim();
             if (form.id.value.length == 0) {
-                alert("아이디를 입력하세요.");
+                alert("아이디 입력");
                 form.id.focus();
                 return false;
             }
             if (form.pw.value.length == 0) {
-                alert("패스워드를 입력하세요.");
+                alert("패스워드 입력");
                 form.pw.focus();
                 return false;
             }

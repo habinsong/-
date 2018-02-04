@@ -1,2 +1,2 @@
 <?php
-$DEFAULT_KEYBOARD = array("급식정보");
+$DEFAULT_KEYBOARD = array("2월 2일 금요일","2월 5일 월요일","2월 6일 화요일","2월 7일 수요일","알레르기정보");

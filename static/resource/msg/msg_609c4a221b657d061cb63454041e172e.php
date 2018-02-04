@@ -1,18 +1,18 @@
 <?php
-// content : 1주
+// content : 27일~31일
 use \kakao\Msg;
 use \kakao\Msg\Message;
 use \kakao\Keyboard;
 
 echo new Msg(
 	new Message(
-		"1주",
+		"3월 마지막주",
 		NULL,
 		NULL
 	),
 	new Keyboard(
 		array(
-			"2일 화요일","3일 수요일","4일 목요일","5일 금요일",
+			"27일"
 		)
 	)
 );
