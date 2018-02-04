@@ -57,7 +57,9 @@ nginx 에서는 .htaccess 파일을 수정해주어야 정상적으로 실행가
  .htaccess 파일의 
  RewriteRule ^(.*)$ /index.php/?id=$1 [L] 를
  RewriteRule ^(.*)$ /하위폴더/index.php/?id=$1 [L] 로 수정하면 된다.
- 
+
+
+$
 # Default Keyboard:[] 오류
 
  처음 로그인과정에서 Default Keyboard:[] 이렇게 표시된다면, 
@@ -112,9 +114,9 @@ nginx 에서는 .htaccess 파일을 수정해주어야 정상적으로 실행가
  
  
  
- 
- 
- 
+# 2018년 2월 4일
+
+거의 1년만에 업데이트
  
  
  
