@@ -1,2 +1,2 @@
 <?php
-$ADMIN_INFO = array("user_name"=>"habins1","password"=>"eogks5413");
+$ADMIN_INFO = array("user_name"=>"hahahaha","password"=>"h");
